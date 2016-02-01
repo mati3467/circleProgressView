@@ -13,6 +13,7 @@
 		95B378EC1C5F736100473829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B378EA1C5F736100473829 /* Main.storyboard */; };
 		95B378EE1C5F736100473829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B378ED1C5F736100473829 /* Assets.xcassets */; };
 		95B378F11C5F736100473829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B378EF1C5F736100473829 /* LaunchScreen.storyboard */; };
+		95B378FB1C5F74D000473829 /* ProgressViewCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B378FA1C5F74D000473829 /* ProgressViewCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		95B378ED1C5F736100473829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95B378F01C5F736100473829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B378F21C5F736100473829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B378F91C5F74D000473829 /* ProgressViewCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewCircle.h; sourceTree = "<group>"; };
+		95B378FA1C5F74D000473829 /* ProgressViewCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,12 @@
 		95B378E01C5F736000473829 /* circleProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				95B378F81C5F746C00473829 /* CircleView */,
 				95B378E41C5F736000473829 /* AppDelegate.h */,
 				95B378E51C5F736000473829 /* AppDelegate.m */,
 				95B378E71C5F736000473829 /* ViewController.h */,
 				95B378E81C5F736100473829 /* ViewController.m */,
 				95B378EA1C5F736100473829 /* Main.storyboard */,
-				95B378ED1C5F736100473829 /* Assets.xcassets */,
-				95B378EF1C5F736100473829 /* LaunchScreen.storyboard */,
-				95B378F21C5F736100473829 /* Info.plist */,
 				95B378E11C5F736000473829 /* Supporting Files */,
 			);
 			path = circleProgressView;
@@ -74,9 +75,21 @@
 		95B378E11C5F736000473829 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95B378EF1C5F736100473829 /* LaunchScreen.storyboard */,
+				95B378F21C5F736100473829 /* Info.plist */,
+				95B378ED1C5F736100473829 /* Assets.xcassets */,
 				95B378E21C5F736000473829 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95B378F81C5F746C00473829 /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				95B378F91C5F74D000473829 /* ProgressViewCircle.h */,
+				95B378FA1C5F74D000473829 /* ProgressViewCircle.m */,
+			);
+			path = CircleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B378E91C5F736100473829 /* ViewController.m in Sources */,
+				95B378FB1C5F74D000473829 /* ProgressViewCircle.m in Sources */,
 				95B378E61C5F736000473829 /* AppDelegate.m in Sources */,
 				95B378E31C5F736000473829 /* main.m in Sources */,
 			);
